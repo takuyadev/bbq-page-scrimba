@@ -1,0 +1,234 @@
+/* ====
+Imports
+==== */
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;900&display=swap");
+
+/* ====
+Variables
+==== */
+
+:root {
+  --primary-orange-400: #f18119;
+  --gradient-orange: linear-gradient(270deg, #FF713B 0%, #FFA51D 100%);
+  --grey-900: #404040;
+  --grey-800: #5A5A5A;
+  --white: #fff;
+}
+
+/* ====
+Layout
+===== */
+body {
+  margin: 0;
+}
+
+.header,
+.register,
+.container{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.container{
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  width: 90%;
+}
+
+.page__container{
+    display:flex;
+    flex-direction: column;
+}
+
+@media (min-width: 1000px){
+    .page__container{
+        flex-direction: row;
+    }
+
+    .header__container,
+    .register__container{
+        height: 100vh;
+    }
+}
+
+
+/* ====
+Typography
+==== */
+html {
+  font-family: "Source Sans Pro", "Gill Sans", "Gill Sans MT", Calibri,
+    "Trebuchet MS", sans-serif;
+}
+
+h1,
+h2 {
+  margin-top: 0;
+}
+
+h1 {
+  font-size: 2.25rem;
+  font-weight: 400;
+}
+
+h2 {
+  font-size: 1.3125rem;
+}
+
+.header__badge,
+.register__caption {
+  font-size: 0.625rem;
+}
+
+@media (min-width: 1000px) {
+  body {
+    font-size: 1.125rem;
+  }
+
+  h1 {
+    font-size: 3.5rem;
+    font-weight: 400;
+  }
+
+  h2 {
+    font-size: 1.75rem;
+  }
+}
+
+
+/* ====
+General Components
+==== */
+
+.btn{
+    border:none;
+    padding: 1em 1.5em;
+    border-radius: 7px;
+    font-size: 0.625rem;
+}
+
+input[type="text"]{
+    padding: 0.25em;
+    border: 1px solid var(--grey-800);
+    border-radius: 7px;
+}
+
+input[type="text"]::placeholder{
+    color: var(--grey-800);
+    text-align: center;
+}
+
+/* ====
+Header
+==== */
+
+.header {
+  background-image: url("../images/dark-ribs.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+}
+
+.header__heading {
+  margin: 0;
+  color: var(--white);
+  text-align: center;
+}
+
+.header__subheading {
+  color: var(--primary-orange-400);
+  text-transform: uppercase;
+}
+
+.header__badge {
+  display: inline-block;
+  margin: 0;
+  padding-top: 0.25em;
+  font-size: 0.625rem;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  font-weight: bold;
+
+  /* ? Gradient Text*/
+  background: var(--gradient-orange);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  /* ? Gradient Border*/
+  border-top: 5px solid transparent;
+  border-image: var(--gradient-orange);
+  border-image-slice: 1;
+}
+
+@media (min-width: 1000px){
+    main{
+        height: 100vh;
+    }
+    .header{
+        height: 100vh;
+        width: 50vw;;
+    }
+    .header__container{
+        height: 100vh;
+        width: 100%;
+    }
+}
+
+/* ====
+Register Form
+==== */
+
+.register__container{
+    padding: 2em 0;
+}
+
+.register__heading{
+    margin: 0;
+    color: var(--grey-900);
+}
+
+.register__subheading{
+    margin: 0;
+    color: var(--primary-orange-400);
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+.register__desc{
+    margin-top: 1.5em;
+    text-align: center;
+    color: var(--grey-900);
+}
+
+.register__form{
+    display:flex;
+    flex-direction: column;
+    row-gap: .75em;
+}
+
+.register__btn{
+    color:white;
+    font-weight: 900;
+    background-image: var(--gradient-orange);
+}
+
+.register__caption{
+    margin-top:1.5em;
+    color:#5A5A5A
+}
+
+@media (min-width: 1000px){
+    .register{
+        height: 100vh;
+        width: 50vw;
+    }
+    .register__container{
+        justify-content: center;
+        align-items: center;
+        max-width: 500px;
+        height: 100vh;
+        width: 100%;
+    }
+}
