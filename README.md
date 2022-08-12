@@ -1,10 +1,10 @@
 # BBQ Page - Scrimba
 
-### `The Challenge`
-
-This challenge was under the "The Frontend Developer Career Path" course provided by Scrimba, and I challanged myself to create a responsive page based off the design provided by Scrimba and created without following tutorials.
+This project is deployed at the [link here.](https://takuyadev.github.io/bbq-page-scrimba)
 
 ### `Summary`
+
+This project is part of the challenge section of the "The Front-End Developer Crash Course". However, for this project, I personally challenged myself to create the application without the help of the teacher, and only watching once completed.
 
 This project is a page for a BBQ restaurant that has several call to action methods and has responsive design, and was part of the "The Frontend Developer Career Path" course on Scrimba.
 
