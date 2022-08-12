@@ -6,7 +6,7 @@ This project is deployed at the [link here.](https://takuyadev.github.io/bbq-pag
 
 This project is part of the challenge section of the "The Front-End Developer Crash Course". However, for this project, I personally challenged myself to create the application without the help of the teacher, and only watching once completed.
 
-This project is a page for a BBQ restaurant that has several call to action methods and has responsive design, and was part of the "The Frontend Developer Career Path" course on Scrimba.
+This application is a page for a BBQ restaurant that has several call to action methods and has responsive design, and was part of the "The Frontend Developer Career Path" course on Scrimba.
 
 ### `Languages / Techstack`
 
